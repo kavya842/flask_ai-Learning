@@ -9,9 +9,15 @@ This repo will be updated regularly as I learn new topics.
 
 ##  Technologies Used
 
+### 🔹 Backend
+
 * Python
 * Flask
-* html5, css
+
+### 🔹 Frontend
+
+* HTML5
+* CSS3
 
 ---
 
