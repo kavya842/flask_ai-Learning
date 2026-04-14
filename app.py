@@ -90,13 +90,25 @@
 #     app.run(debug=True)
 
 """adding integers"""
+# from flask import Flask
+
+# app=Flask(__name__)
+
+# @app.route('/hello/<int:numbers>')
+# def kavya(numbers):
+#     return "Kavya roll no= %d" %numbers
+# if __name__=='__main__':
+#     app.run(debug=True)
+
+
+"""add_url_rule"""
 from flask import Flask
 
 app=Flask(__name__)
 
-@app.route('/hello/<int:numbers>')
-def kavya(numbers):
-    return "Kavya roll no= %d" %numbers
+def kavya():
+    return "Hello kavya nice to meet you"
+app.add_url_rule('/kavya','kavya',kavya)
+
 if __name__=='__main__':
     app.run(debug=True)
-
