@@ -102,13 +102,25 @@
 
 
 """add_url_rule"""
-from flask import Flask
+# from flask import Flask
+
+# app=Flask(__name__)
+
+# def kavya():
+#     return "Hello kavya nice to meet you"
+# app.add_url_rule('/kavya','kavya',kavya)
+
+# if __name__=='__main__':
+#     app.run(debug=True)
+
+""" Combining with templates """
+from flask import *
 
 app=Flask(__name__)
 
+@app.route('/')
 def kavya():
-    return "Hello kavya nice to meet you"
-app.add_url_rule('/kavya','kavya',kavya)
+    return render_template('index.html')
 
 if __name__=='__main__':
     app.run(debug=True)
